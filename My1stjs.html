@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>My First JavaScript</h2>
+
+        <button type="button" onclick="document.getElementById('demo').
+        innerHTML= Date()">Click me to display Date and Time.</button>
+        <p id="demo"></p>
+        <script>
+            function displayDate() {
+                const now = new Date();
+                const year = now.getFullYear();
+                const month = String(now.getMonth()+1).padStart(2, '0');
+                const date = String(now.getMonth()).padStart(2, '0');
+
+                document.getElementById('demo').innerHTML='${year}-${month}${date}''jjjjjjj
+            }
+        </script>
+    </body>
+</html>

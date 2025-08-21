@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color:beige;
+                display: flex;
+                align-items: center;
+                height: 100vh;
+                margin:0;
+            }
+        </style>
+    </head>
+    <body>
+        <button type="button" onclick="myfunction()" 
+        style="background-color:skyblue; padding : 10px;">Click Once!</button>
+        <p id="demo">This is a demo</p>
+        <script>
+            function myfunction() {
+                document.getElementById("demo").innerHTML="Successfull!";
+            }
+        </script>
+    </body>
+</html>

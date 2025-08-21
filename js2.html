@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button type="button" onclick="toggleText()">Click Once!</button>
+    <p id="demo">This is a demo</p>
+
+    <script>
+      function toggleText() {
+        let demo = document.getElementById("demo");
+        if (demo.innerHTML === "This is a demo") {
+          demo.innerHTML = "Successfull!";
+        } else {
+          demo.innerHTML = "This is a demo";
+        }
+      }
+    </script>
+  </body>
+</html>

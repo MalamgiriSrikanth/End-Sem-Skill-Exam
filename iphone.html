@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: salmon;
+        font-family: Arial, sans-serif;
+      }
+
+      .card {
+        width: 400px;
+        background-color: slateblue;
+        border-radius: 20px;
+        text-align: center;
+        padding: 20px;
+        margin: 80px auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        color: white;
+      }
+
+      .card h1 {
+        font-size: 24px;
+      }
+
+      .card img {
+        width: 200px;
+        border-radius: 20px;
+        margin-bottom: 15px;
+        object-fit: cover;
+      }
+
+      .card ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .card li::before {
+        content: "✔ ";
+        color: white;
+      }
+
+      .card a {
+        color: white;
+        background-color: orange;
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 10px;
+        text-decoration: none;
+      }
+
+      .card a:hover {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>iPhone 16 Pro-Max</h1>
+      <img src="iphone.png" alt="iphone 16 pro max" />
+      <p><strong>This is a high-quality product you’ll love to use.</strong></p>
+      <p><b>Features:</b></p>
+      <ul>
+        <li>Display</li>
+        <li>Size and Weight</li>
+        <li>Apple Intelligence</li>
+      </ul>
+      <a href="https://www.amazon.in/iPhone-16-Pro-Max-256/dp/B0DGHYDZR9?th=1" target="_blank">Buy Now</a>
+    </div>
+  </body>
+</html>

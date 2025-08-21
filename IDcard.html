@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My ID Card</title>
+    <style>
+        body {
+            background-color: #87ceeb; /* skyblue */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .card {
+            width: 300px;
+            background-color: rgb(255, 194, 144);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card h1 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .card img {
+            width: 100px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #0077b6;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 16px;
+            margin: 5px 0;
+            color: #444;
+        }
+
+        .card button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        .card button:hover {
+            background-color: #005f8a;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>ID Card</h1>
+        <img src="Idcard.jpg.jpg" alt="Profile Photo">
+        <p><strong>Name:</strong> Malamgiri Srikanth</p>
+        <p><strong>ID:</strong> 2400030368</p>
+        <p><strong>Course:</strong> B.Tech CSE</p>
+        <p><strong>Batch:</strong> 2024-2028</p>
+        <p>Click below to see profile</p>
+        <button onclick="alert('Profile Coming Soon...')">Click Here</button>
+    </div>
+
+</body>
+</html>
