@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course List App</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+        input {
+            padding: 8px;
+            width: 250px;
+        }
+        button {
+            padding: 8px 15px;
+            margin-left: 5px;
+        }
+        ul {
+            margin-top: 20px;
+            padding-left: 0;
+        }
+        li {
+            list-style: none;
+            margin-bottom: 8px;
+        }
+        .delete-btn {
+            margin-left: 15px;
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>📚 Course List Application</h2>
+
+    <input id="courseInput" type="text" placeholder="Enter course name">
+    <button onclick="addCourse()">Add</button>
+
+    <ul id="courseList"></ul>
+
+    <script>
+        function addCourse() {
+            let courseName = document.getElementById("courseInput").value;
+
+            if (courseName === "") {
+                alert("Please enter a course name!");
+                return;
+            }
+
+            let li = document.createElement("li");
+            li.innerHTML = courseName + 
+                ' <span class="delete-btn" onclick="this.parentElement.remove()">Delete</span>';
+
+            document.getElementById("courseList").appendChild(li);
+
+            document.getElementById("courseInput").value = "";
+        }
+    </script>
+
+</body>
+</html>
